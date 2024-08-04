@@ -1,11 +1,11 @@
 
 {
 
-    "name": "ajpythontxt",
+    "name": "megatronuploader",
 
     "description": "Download videos from various websites using this telegram bot",
 
-    "repository": "https://github.com/AJ-PYTHON/AJ_PYTHON_TXT",
+    "repository": "https://github.com/megatron-78/AJ_PYTHON_TXT",
     "buildpacks":[
         {
             "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
