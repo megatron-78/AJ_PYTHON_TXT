@@ -1,6 +1,6 @@
 # TXT UPLOADER
 
-# Made By AJ PYTHON
+# Made By 𝐌𝐄𝐆𝐀𝐓𝐑𝐎𝐍
 
 
 ## DEPLOY TO HEROKU
