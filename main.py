@@ -30,14 +30,14 @@ import datetime
 import aiohttp
 
 bot = Client("bot",
-             bot_token= "", 
+             bot_token= "7221961444:AAH12Eex7XZD9VzlN53iWD5e8L3c9EEYQ_8", 
              #bot_token= os.environ.get("BOT_TOKEN"),
-             api_id= ,
-             api_hash= "")
+             api_id= 25178671,
+             api_hash= "6c3eea183e911954bfe11540066f7934")
 auth_users = []
 #romeo  
 
-owner_id = 
+owner_id = 6622333718
 # Extras 
 failed_links = []  # List to store failed links
 fail_cap =f"**➜ This file Contain Failed Downloads while Downloding \n You Can Retry them one more time **"
@@ -56,17 +56,17 @@ keyboard = InlineKeyboardMarkup(
         [
             InlineKeyboardButton(
                 text="👨🏻‍💻 Devloper",
-                url="https://t.me/AJ_PYTHON_15",
+                url="https://t.me/mk2648",
             ),
             InlineKeyboardButton(
                 text="❣️ GITHUB",
-                url="https://t.me/AJ_PYTHON_15",
+                url="https://t.me/mk2648",
             ),
         ],
         [
             InlineKeyboardButton(
                 text="🪄 Updates Channel",
-                url="https://t.me/AJ_PYTHON_INFINITY",
+                url="https://t.me/+yoXCijSKS89hZjBl",
             ),
             
         ],
@@ -80,17 +80,17 @@ Busy = InlineKeyboardMarkup(
         [
             InlineKeyboardButton(
                 text="👨🏻‍💻 Devloper",
-                url="https://t.me/AJ_PYTHON_15",
+                url="https://t.me/mk2648",
             ),
             InlineKeyboardButton(
                 text="❣️ GITHUB",
-                url="https://t.me/AJ_PYTHON_15",
+                url="https://t.me/mk2648",
             ),
         ],
         [
             InlineKeyboardButton(
                 text="Join to Check My Status ",
-                url="https://t.me/AJ_PYTHON_15",
+                url="https://t.me/mk2648",
             ),
             
         ],
@@ -113,7 +113,7 @@ async def send_logs(bot: Client, m: Message):
 
 # List of image URLs
 image_urls = [
-    "https://graph.org/file/a32e03bd85fa2511b12c9.jpg",
+    "http://graph.org/file/be3a3c45c761ec78e279e.jpg",
     "https://graph.org/file/ee0ab99682b336af9a1f3.jpg",
     "https://graph.org/file/37ec2bfe6eb404ee3bc08.jpg",
     "https://graph.org/file/38c8abee2d89021c70a12.jpg",
@@ -131,7 +131,8 @@ async def start_command(bot: Client, message: Message):
     
     
     # Caption for the image
-    caption = f"**𝐇𝐞𝐥𝐥𝐨 𝐃𝐞𝐚𝐫  👋!\n\n➠ 𝐈 𝐚𝐦 𝐚 𝐓𝐞𝐱𝐭 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐖𝐢𝐭𝐡 ♥️\n➠ Can Extract Videos & Pdf Form Your Text File and Upload to Telegram\n\n➠ 𝐔𝐬𝐞 /drm 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐫𝐨𝐦 𝐓𝐗𝐓 𝐅𝐢𝐥𝐞  \n\n➠𝐌𝐚𝐝𝐞 𝐁𝐲: @AJ_PYTHON_15 **\n"
+    caption = f"**𝐇𝐞𝐥𝐥𝐨 𝐃𝐞𝐚𝐫  👋!\n\n➠ 𝐈 𝐚𝐦 𝐚 𝐓𝐞𝐱𝐭 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐖𝐢𝐭𝐡 ♥️\n➠ Can Extract Videos & Pdf Form Your Text File and Upload to Telegram\n\n➠ 𝐔𝐬𝐞 /drm 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐓𝐨 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐅𝐫𝐨𝐦 𝐓𝐗𝐓 𝐅𝐢𝐥𝐞  \n\n➠𝐌𝐚𝐝𝐞 𝐁𝐲: @mk2648
+    **\n"
     
     # Send the image with the caption
     await bot.send_photo(
@@ -145,7 +146,7 @@ async def start_command(bot: Client, message: Message):
 async def run_bot(bot: Client, m: Message):
     user_id = m.from_user.id
     if user_id not in auth_users:
-        await m.reply_text("**HEY BUDDY THIS IS ONLY FOR MY ADMINS TO USE THIS CONTACT MY AJ : @AJ_PYTHON_15  **")
+        await m.reply_text("**HEY BUDDY THIS IS ONLY FOR MY ADMINS TO USE THIS CONTACT MY AJ : @mk2648  **")
     else:
         editable = await m.reply_text(" Send Your HTML file\n")
         input: Message = await bot.listen(editable.chat.id)
@@ -196,7 +197,7 @@ async def myplan_command_handler(bot, message):
                 today = datetime.datetime.today()
                 if today > datetime.datetime.strptime(expiration_date, "%d-%m-%Y"):
                     plan = "EXPIRED "
-                    response_text = f"**✨ User ID: {user_id}\n📊 PLAN STAT : {plan}\n\n🔰 Activated on : {subscription_start}\n🧨 Expiration Date: {expiration_date} \n\n 🫰🏼 ACTIVATE YOUR PLAN NOW ! \n⚡️ TO ACTIVATE MESSAGE : @AJ_PYTHON_15 :D **"
+                    response_text = f"**✨ User ID: {user_id}\n📊 PLAN STAT : {plan}\n\n🔰 Activated on : {subscription_start}\n🧨 Expiration Date: {expiration_date} \n\n 🫰🏼 ACTIVATE YOUR PLAN NOW ! \n⚡️ TO ACTIVATE MESSAGE : @mk2648 :D **"
                 else:
                     plan = "ALIVE!"  
                     response_text = f"**✨ User ID: {user_id}\n📊 PLAN STAT : {plan}\n🔰 Activated on : {subscription_start}\n🧨 Expiration Date: {expiration_date}**"
@@ -252,7 +253,7 @@ async def account_login(bot: Client, m: Message):
             return
     else:
         
-        editable = await m.reply_text(f"**➠ 𝐒𝐞𝐧𝐝 𝐌𝐞 𝐘𝐨𝐮𝐫 𝐓𝐗𝐓 𝐅𝐢𝐥𝐞 𝐢𝐧 𝐀 𝐏𝐫𝐨𝐩𝐞𝐫 𝐖𝐚𝐲 \n\n➠ TXT FORMAT : LINK : URL \n➠ 𝐌𝐨𝐝𝐢𝐟𝐢𝐞𝐝 𝐁𝐲:  @AJ_PYTHON_15 **")
+        editable = await m.reply_text(f"**➠ 𝐒𝐞𝐧𝐝 𝐌𝐞 𝐘𝐨𝐮𝐫 𝐓𝐗𝐓 𝐅𝐢𝐥𝐞 𝐢𝐧 𝐀 𝐏𝐫𝐨𝐩𝐞𝐫 𝐖𝐚𝐲 \n\n➠ TXT FORMAT : LINK : URL \n➠ 𝐌𝐨𝐝𝐢𝐟𝐢𝐞𝐝 𝐁𝐲:  @mk2648 **")
         input: Message = await bot.listen(editable.chat.id)
         editable = await editable.edit(f"**⚙️PROCESSING INPUT.......**")
 
@@ -297,7 +298,7 @@ async def account_login(bot: Client, m: Message):
                     pdfcount += 1 
                 else:
                     videocount += 1
-    await editable.edit(f"**Total links found are : {len(links)}\n┃\n┠ Total Video Count : {videocount}\n┠ Total Pdf Count: {pdfcount}  \n┠ Send From where you want to download initial is  : `1` \n┃\n┠ Send `stop` If don't want to Contine \n┖ Bot By : @AJ_PYTHON_15**" )
+    await editable.edit(f"**Total links found are : {len(links)}\n┃\n┠ Total Video Count : {videocount}\n┠ Total Pdf Count: {pdfcount}  \n┠ Send From where you want to download initial is  : `1` \n┃\n┠ Send `stop` If don't want to Contine \n┖ Bot By : @mk2648**" )
     input0: Message = await bot.listen(editable.chat.id)
     raw_text = input0.text
     await input0.delete(True)
@@ -340,17 +341,17 @@ async def account_login(bot: Client, m: Message):
     await input2.delete(True)
     
     
-    await editable.edit("**Enter Your Name or send `OBITO` for use default**")
+    await editable.edit("**Enter Your Name or send `Mᴇɢᴀᴛʀᴏɴ❤️` for use default**")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
     if raw_text3 == 'OBITO':
-        CR = "@AJ_PYTHON_15"
+        CR = "@mk2648"
     else:
         CR = raw_text3
 
 
-    await editable.edit("**🖼 Thumbnail \n\n• Custom Thumbnail : Send me link :- https://graph.org/file/84504a34a8c386fcb0a27.jpg \n• If you don't want Send :  `no` **")  
+    await editable.edit("**🖼 Thumbnail \n\n• Custom Thumbnail : Send me link :- http://graph.org/file/be3a3c45c761ec78e279e.jpg \n• If you don't want Send :  `no` **")  
     input6 = message = await bot.listen(editable.chat.id)
     raw_text6 = input6.text
     await input6.delete(True)
@@ -444,14 +445,14 @@ async def account_login(bot: Client, m: Message):
             #     cmd = f'yt-dlp -f "{ytf}+bestaudio" --hls-prefer-ffmpeg --no-keep-video --remux-video mkv "{url}" -o "{name}.%(ext)s"'
 
             try:   
-                cc = f' **➭ Index » {str(count).zfill(3)} **\n**➭ Title »  {name1}.mkv**\n**➭ 𝐁𝐚𝐭𝐜𝐡 » {b_name} **\n**➭ Quality » {raw_text2}**\n\n✨ **𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐃 𝐁𝐘 : 𝗔𝗝 𝗣𝗬𝗧𝗛𝗢𝗡 💀**\n**━━━━━━━✦✗✦━━━━━━━**'
-                cc1 = f'**➭ Index » {str(count).zfill(3)} **\n**➭ Title » {name1}.pdf** \n**➭ 𝐁𝐚𝐭𝐜𝐡 »  {b_name}**\n\n✨ **𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐃 𝐁𝐘 : 𝗔𝗝 𝗣𝗬𝗧𝗛𝗢𝗡 💀**\n**━━━━━━━✦✗✦━━━━━━━**'                            
+                cc = f' **➭ Index » {str(count).zfill(3)} **\n**➭ Title »  {name1}.mkv**\n**➭ 𝐁𝐚𝐭𝐜𝐡 » {b_name} **\n**➭ Quality » {raw_text2}**\n\n✨ **𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐃 𝐁𝐘 : 𝐌𝐄𝐆𝐀𝐓𝐑𝐎𝐍❤️**\n**━━━━━━━✦✗✦━━━━━━━**'
+                cc1 = f'**➭ Index » {str(count).zfill(3)} **\n**➭ Title » {name1}.pdf** \n**➭ 𝐁𝐚𝐭𝐜𝐡 »  {b_name}**\n\n✨ **𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐄𝐃 𝐁𝐘 : 𝐌𝐄𝐆𝐀𝐓𝐑𝐎𝐍❤️**\n**━━━━━━━✦✗✦━━━━━━━**'                            
                
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
                         copy = await bot.send_document(chat_id=m.chat.id,document=ka, caption=cc1)
-                        await copy.copy(chat_id = -1002097681261)
+                        await copy.copy(chat_id = -1002192499157)
                         count+=1
                         os.remove(ka)
                         time.sleep(1)
@@ -462,7 +463,7 @@ async def account_login(bot: Client, m: Message):
                 elif ".pdf" in url:
                     try:
                         time.sleep(1)
-                        #prog = await m.reply_text(f"📥 **Downloading **\n\n**➭ Index » {str(count).zfill(3)} **\n**➭ File » ** `{name}`\n**➭ Link »** `{url}`\n\n✨ **Bot Made by 𝗔𝗝 𝗣𝗬𝗧𝗛𝗢𝗡 💀**\n**━━━━━━━✦OBITO✦━━━━━━━**")
+                        #prog = await m.reply_text(f"📥 **Downloading **\n\n**➭ Index » {str(count).zfill(3)} **\n**➭ File » ** `{name}`\n**➭ Link »** `{url}`\n\n✨ **Bot Made by 𝐌𝐄𝐆𝐀𝐓𝐑𝐎𝐍❤️**\n**━━━━━━━✦Mᴇɢᴀᴛʀᴏɴ✦━━━━━━━**")
                         cmd = f'yt-dlp -o "{name}.pdf" "{url}"'
                         download_cmd = f"{cmd} -R 25 --fragment-retries 25"
                         os.system(download_cmd)
@@ -497,7 +498,7 @@ async def account_login(bot: Client, m: Message):
                         continue
 
                 else:
-                    prog = await m.reply_text(f"📥 **Downloading **\n\n**➭ Count » {str(count).zfill(3)} **\n**➭ Video Name » ** `{name}`\n**➭ Quality** » `{raw_text2}`\n**➭ Video Url »** NONE OF YOUR BUSINESS\n**➭ Thumbnail »** `{input6.text}` \n\n✨ **Bot Made by @AJ_PYTHON_15**\n**━━━━━━━✦OBITO✦━━━━━━━**")
+                    prog = await m.reply_text(f"📥 **Downloading **\n\n**➭ Count » {str(count).zfill(3)} **\n**➭ Video Name » ** `{name}`\n**➭ Quality** » `{raw_text2}`\n**➭ Video Url »** NONE OF YOUR BUSINESS\n**➭ Thumbnail »** `{input6.text}` \n\n✨ **Bot Made by @mk2648**\n**━━━━━━━✦Mᴇɢᴀᴛʀᴏɴ✦━━━━━━━**")
                     time.sleep(2)
                     res_file = await helper.drm_download_video(url,quality, name,key)
                     filename = res_file
@@ -529,7 +530,7 @@ async def account_login(bot: Client, m: Message):
      failed_links.clear()
      os.remove(f'failed_downloads.txt')
     await m.reply_text("⚜Done⚜")
-    await m.reply_text("**Thanks You By AIMERS✨**")
+    await m.reply_text("**Thanks You By 𝐌𝐄𝐆𝐀𝐓𝐑𝐎𝐍❤️✨**")
     processing_request = False  # Reset the processing flag  
 
 
